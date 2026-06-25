@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1280" width="1920" height="1280" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E1840"/>
+      <stop offset="0.55" stop-color="#2a2360"/>
+      <stop offset="1" stop-color="#15633F"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.8" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#1F8A5B" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1F8A5B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.1" cy="0.9" r="0.6">
+      <stop offset="0" stop-color="#3B2F8F" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#3B2F8F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1280" fill="url(#base)"/>
+  <rect width="1920" height="1280" fill="url(#glow1)"/>
+  <rect width="1920" height="1280" fill="url(#glow2)"/>
+  <rect width="1920" height="1280" fill="url(#dots)"/>
+</svg>

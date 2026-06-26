@@ -38,6 +38,7 @@ for (const page of pages) {
   if (!html.includes('https://jade-remodeling.vercel.app/assets/img/og-image.svg')) fail(`${page} is missing the absolute OG image`);
   if (/FL License #|\[add yours\]|Licensed &amp; Insured|Licensed & Insured/.test(html)) fail(`${page} still contains unverified license placeholder language`);
   if (/<span class="sample-tag">Sample<\/span>/.test(html)) fail(`${page} still labels fake testimonials as samples`);
+  if (/g-bath\.svg|Bathroom remodel sample placeholder|data-filter="bath"/.test(html)) fail(`${page} still contains the fake bathroom gallery image`);
 
   for (const [, src] of html.matchAll(/\s(?:src|href)="([^"]+)"/g)) {
     if (/^(https?:|mailto:|tel:|sms:|#)/.test(src)) continue;

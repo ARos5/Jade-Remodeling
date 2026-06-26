@@ -3,19 +3,19 @@
     <path id="jadeArc" d="M 26 120 Q 190 54 354 120" fill="none"/>
   </defs>
   <!-- arched wordmark (as on the business card) -->
-  <text font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="25.5" letter-spacing="0" fill="#3B2F8F">
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="25.5" letter-spacing="0" fill="#4736A3">
     <textPath href="#jadeArc" startOffset="50%" text-anchor="middle">JADE REMODELING, INC.</textPath>
   </text>
   <!-- emblem: two green house outlines flanking a central indigo house with crossed tools, over a swoosh -->
   <g transform="translate(58 138) scale(1.32)">
-    <g fill="none" stroke="#2EA24F" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <g fill="none" stroke="#159447" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
       <path d="M13 85 L46 55 L79 85"/>
       <path d="M23 81 L23 123 L69 123 L69 81"/>
       <path d="M121 85 L154 55 L187 85"/>
       <path d="M131 81 L131 123 L177 123 L177 81"/>
     </g>
-    <polygon points="50 79 100 33 150 79" fill="#3B2F8F"/>
-    <rect x="65" y="77" width="70" height="57" rx="4" fill="#3B2F8F"/>
+    <polygon points="50 79 100 33 150 79" fill="#4736A3"/>
+    <rect x="65" y="77" width="70" height="57" rx="4" fill="#4736A3"/>
     <g fill="#FFFFFF">
       <g transform="rotate(-29 100 103)">
         <polygon points="95.5 60 104.5 60 100 51"/>
@@ -27,7 +27,7 @@
         <path d="M83 65 h31 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-10 v-6 h-21 z"/>
       </g>
     </g>
-    <path d="M17 140 C 62 123 138 153 185 135" fill="none" stroke="#2EA24F" stroke-width="7.5" stroke-linecap="round"/>
-    <path d="M17 151 C 70 135 128 164 185 147" fill="none" stroke="#3B2F8F" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M17 140 C 62 123 138 153 185 135" fill="none" stroke="#159447" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M17 151 C 70 135 128 164 185 147" fill="none" stroke="#4736A3" stroke-width="7.5" stroke-linecap="round"/>
   </g>
 </svg>

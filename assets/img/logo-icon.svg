@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 162" role="img" aria-label="Jade Remodeling, Inc. logo">
   <!-- flanking house outlines (green) -->
-  <g fill="none" stroke="#178052" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+  <g fill="none" stroke="#159447" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
     <path d="M13 85 L46 55 L79 85"/>
     <path d="M23 81 L23 123 L69 123 L69 81"/>
     <path d="M121 85 L154 55 L187 85"/>
     <path d="M131 81 L131 123 L177 123 L177 81"/>
   </g>
   <!-- central house (indigo) -->
-  <polygon points="50 79 100 33 150 79" fill="#3B2F8F"/>
-  <rect x="65" y="77" width="70" height="57" rx="4" fill="#3B2F8F"/>
+  <polygon points="50 79 100 33 150 79" fill="#4736A3"/>
+  <rect x="65" y="77" width="70" height="57" rx="4" fill="#4736A3"/>
   <!-- crossed tools (white negative space) -->
   <g fill="#FFFFFF">
     <!-- screwdriver -->
@@ -24,6 +24,6 @@
     </g>
   </g>
   <!-- swoosh -->
-  <path d="M17 140 C 62 123 138 153 185 135" fill="none" stroke="#178052" stroke-width="7.5" stroke-linecap="round"/>
-  <path d="M17 151 C 70 135 128 164 185 147" fill="none" stroke="#3B2F8F" stroke-width="7.5" stroke-linecap="round"/>
+  <path d="M17 140 C 62 123 138 153 185 135" fill="none" stroke="#159447" stroke-width="7.5" stroke-linecap="round"/>
+  <path d="M17 151 C 70 135 128 164 185 147" fill="none" stroke="#4736A3" stroke-width="7.5" stroke-linecap="round"/>
 </svg>

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "node scripts/validate-static-site.mjs",
-    "build": "node scripts/validate-static-site.mjs"
+    "build": "node scripts/validate-static-site.mjs && node scripts/build-static-site.mjs"
   },
   "devDependencies": {}
 }

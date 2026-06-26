@@ -97,9 +97,13 @@ ul { margin: 0; padding: 0; }
 .site-header { position: fixed; inset: 0 0 auto 0; height: var(--nav-h); z-index: 100; display: flex; align-items: center; transition: background .25s ease, box-shadow .25s ease, border-color .25s ease; border-bottom: 1px solid transparent; }
 .site-header .container { display: flex; align-items: center; gap: 16px; }
 .site-header { background: rgba(251,250,247,.96); backdrop-filter: saturate(140%) blur(10px); box-shadow: var(--shadow-sm); border-bottom-color: var(--border); }
-.brand { display: inline-flex; align-items: center; gap: 11px; margin-right: auto; }
+.brand { display: inline-flex; align-items: center; gap: 10px; margin-right: auto; min-width: 0; }
 .brand:hover { text-decoration: none; }
 .brand-icon { width: 44px; height: 44px; flex: none; }
+.brand-mark { display: block; width: 54px; height: 44px; object-fit: contain; flex: none; }
+.brand-wordmark { display: grid; gap: 1px; font-family: var(--font-head); color: var(--indigo); line-height: 1; text-transform: uppercase; }
+.brand-wordmark span { font-size: .88rem; font-weight: 900; letter-spacing: .055em; white-space: nowrap; }
+.brand-wordmark small { font-size: .56rem; font-weight: 800; letter-spacing: .12em; color: var(--green-d); white-space: nowrap; }
 .brand-logo { display: block; width: auto; height: 64px; }
 .brand-name { font-family: var(--font-head); font-weight: 800; line-height: 1; color: var(--indigo-d); font-size: 1.18rem; letter-spacing: -.01em; }
 .brand-name span { display: block; font-size: .66rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-top: 3px; }
@@ -323,7 +327,9 @@ ul { margin: 0; padding: 0; }
   .nav a:hover { background: var(--surface-2) !important; }
   .header-cta .call-link { display: none; }
   .header-cta .btn { display: none; } /* Call/Text/Estimate live in the sticky bottom bar on mobile */
-  .brand-logo { height: 54px; }
+  .brand-mark { width: 48px; height: 40px; }
+  .brand-wordmark span { font-size: .74rem; letter-spacing: .035em; }
+  .brand-wordmark small { font-size: .48rem; letter-spacing: .08em; }
   .mobilebar { display: grid; }
   body { padding-bottom: 58px; }
   .dual-cta { grid-template-columns: 1fr; }

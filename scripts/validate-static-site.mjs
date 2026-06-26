@@ -42,8 +42,9 @@ for (const page of pages) {
 
   for (const [, src] of html.matchAll(/\s(?:src|href)="([^"]+)"/g)) {
     if (/^(https?:|mailto:|tel:|sms:|#)/.test(src)) continue;
-    if (src.includes('#')) continue;
-    if (!existsSync(join(root, src))) fail(`${page} references missing local file: ${src}`);
+    const localPath = src.split(/[?#]/)[0];
+    if (!localPath) continue;
+    if (!existsSync(join(root, localPath))) fail(`${page} references missing local file: ${src}`);
   }
 }
 

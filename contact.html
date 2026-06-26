@@ -7,11 +7,13 @@
 <title>Contact &amp; Free Estimate | Jade Remodeling, Inc. | Jacksonville</title>
 <meta name="description" content="Request a free estimate from Jade Remodeling, Inc. Call or text (904) 762-3792, email cortezjade18@gmail.com, or send your project details. Serving Jacksonville & NE Florida.">
 <meta name="theme-color" content="#1E1840">
+<link rel="canonical" href="https://jade-remodeling.vercel.app/contact.html">
 <link rel="icon" href="assets/img/logo-icon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact Jade Remodeling, Inc. — Free Estimates">
 <meta property="og:description" content="Call or text (904) 762-3792 for a free, no-obligation estimate. Jacksonville & NE Florida.">
-<meta property="og:image" content="assets/img/kitchen-finished.jpg">
+<meta property="og:url" content="https://jade-remodeling.vercel.app/contact.html">
+<meta property="og:image" content="https://jade-remodeling.vercel.app/assets/img/og-image.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
@@ -77,7 +79,7 @@
         <h2>Request a free estimate</h2>
         <p class="lead" style="margin-bottom:24px">Fill out a few details below — or skip the form and call/text us directly.</p>
 
-        <form id="quote-form" action="#" method="post" aria-describedby="form-disclaimer">
+        <form id="quote-form" action="mailto:cortezjade18@gmail.com" method="post" enctype="text/plain" aria-describedby="form-disclaimer" data-recipient="cortezjade18@gmail.com">
           <div class="field">
             <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
             <input id="name" name="name" type="text" autocomplete="name" data-required placeholder="Your name">
@@ -118,18 +120,14 @@
             <textarea id="message" name="message" data-required placeholder="Tell us a bit about the project, the address area, and your timeline."></textarea>
             <span class="err">Please add a few details.</span>
           </div>
-          <div class="field">
-            <label for="photo">Add a photo <span style="color:var(--muted);font-weight:500">(optional)</span></label>
-            <input id="photo" name="photo" type="file" accept="image/*">
-            <p class="form-note">A quick photo helps us give you a more accurate estimate.</p>
-          </div>
+          <p class="form-note">Have photos? After the email opens, attach them there or text them to <a href="sms:+19047623792">(904) 762-3792</a>.</p>
           <button class="btn btn-primary btn-lg btn-block" type="submit">Send my request <svg class="ico" aria-hidden="true"><use href="assets/img/icons.svg#arrow"></use></svg></button>
-          <p class="form-note" id="form-disclaimer" style="text-align:center;margin-top:14px"><svg class="ico" aria-hidden="true" style="width:15px;height:15px;color:var(--green);vertical-align:-2px"><use href="assets/img/icons.svg#shield"></use></svg> Free &amp; no-obligation · We reply same day · Locally owned</p>
+          <p class="form-note" id="form-disclaimer" style="text-align:center;margin-top:14px"><svg class="ico" aria-hidden="true" style="width:15px;height:15px;color:var(--green);vertical-align:-2px"><use href="assets/img/icons.svg#shield"></use></svg> This demo opens your email app; your request is sent only after you send that email.</p>
         </form>
 
         <div class="form-success" id="form-success" role="status">
-          <h3 style="margin-top:0">Thanks — your request is in! ✅</h3>
-          <p style="margin-bottom:6px">We'll reach out shortly, usually the same day. For the fastest response you can also call or text us directly at <a href="tel:+19047623792"><strong>(904) 762-3792</strong></a>.</p>
+          <h3 style="margin-top:0">Your email app should open now.</h3>
+          <p style="margin-bottom:6px">Review the prefilled message and press send. If it does not open, call or text Jade Remodeling at <a href="tel:+19047623792"><strong>(904) 762-3792</strong></a>.</p>
         </div>
       </div>
 
@@ -205,7 +203,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Jade Remodeling, Inc. · Jacksonville, FL</span>
-      <span class="license-note">Licensed &amp; Insured · FL License #&nbsp;<span class="ph">[add yours]</span></span>
+      <span class="license-note">Credentials and insurance details can be confirmed before work begins.</span>
     </div>
   </div>
 </footer>

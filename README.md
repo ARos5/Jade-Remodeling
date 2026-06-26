@@ -3,10 +3,10 @@
 A modern, mobile-first marketing website for **Jade Remodeling, Inc.** — a family-owned remodeling, repair &
 handyman business in **Jacksonville, FL** (owner **Jesse Cortez**). Kitchen & bathroom specialists.
 
-Built as a hand-coded **static site** (HTML + CSS + vanilla JS — no framework, no build step) so it's fast,
+Built as a hand-coded **static site** (HTML + CSS + vanilla JS — no framework) so it's fast,
 cheap to host, and easy to edit.
 
-> **Status: mockup / proposal.** Some content is intentionally a clearly-marked placeholder (see below). Built
+> **Status: polished demo / proposal.** Some content is intentionally a clearly-marked placeholder (see below). Built
 > from the project spec at `~/Documents/Claude/Projects/specs/jade-remodeling-website.md`.
 
 ## Pages
@@ -25,31 +25,29 @@ assets/
   img/
     logo-icon.svg     # the logo, recreated as vector (also the favicon)
     icons.svg         # inline SVG icon sprite
-    hero.svg          # hero background placeholder
-    *.svg             # gallery / about placeholders
+    og-image.svg      # social preview image
+    hero.svg          # hero background art
 ```
 
 ## Brand
 - **Green** `#178052` (action / CTAs) · **Indigo** `#3B2F8F` (structure) · warm off-white `#FBFAF7`
 - Headings **Plus Jakarta Sans**, body **Inter** (Google Fonts, loaded non-render-blocking)
 
-## ⚠️ Placeholders to replace before going live
-1. **Photos** — every image in `assets/img/` except `logo-icon.svg` / `icons.svg` is an on-brand placeholder.
-   Drop real job photos in `assets/img/` (keep the same filenames, or update the `src`/`srcset` in the HTML).
-   Gallery filenames: `kitchen-before/after`, `bath-before/after`, `g-kitchen`, `g-bath`, `g-tile`,
-   `g-exterior`, `g-paint`, `g-handyman`, `about`, `hero`.
-2. **License #** — the footer shows `FL License # [add yours]`. Add the real number (or remove if not licensed).
+## Confirm before using as a final client site
+1. **Photos** — most gallery images are real Jade project photos; the bathroom card is still marked as a sample until a real photo is available.
+2. **License / insurance language** — do not publish license-number or "licensed and insured" claims until Jade confirms the exact wording.
 3. **Email** — currently `cortezjade18@gmail.com` (from the business card); confirm before launch.
-4. **Reviews** — the lead review (Trevor‑Tami Kettle) is real; the other two are tagged **"Sample"** — replace
-   with real reviews or remove.
-5. **Contact form** — client-side only (validates + shows a success message). To receive real leads, wire it to
-   an email/Form service (e.g. Formspree / Web3Forms) or a small backend.
+4. **Reviews** — the Trevor-Tami Kettle review is presented as verified; the other review cards are clearly marked as slots until approved testimonials are added.
+5. **Contact form** — the demo validates fields and opens a prefilled email. For a production lead flow, wire it to Formspree, Web3Forms, Vercel Functions, or a CRM.
 
 ## Run locally
 ```bash
 # from this folder
 python3 -m http.server 8080
 # open http://localhost:8080
+
+npm test
+npm run build
 ```
 
 ## Deploy (Vercel)

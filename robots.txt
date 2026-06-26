@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jade-remodeling.vercel.app/sitemap.xml

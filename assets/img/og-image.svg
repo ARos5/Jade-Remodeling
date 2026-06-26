@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Jade Remodeling, Inc.</title>
+  <desc id="desc">Social preview image for Jade Remodeling, Inc. in Jacksonville, Florida.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1E1840"/>
+      <stop offset="0.58" stop-color="#3B2F8F"/>
+      <stop offset="1" stop-color="#178052"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 498 C180 438 350 568 544 504 C742 438 888 425 1200 506 L1200 630 L0 630 Z" fill="#C7F05B" opacity=".2"/>
+  <path d="M154 244 L278 148 L402 244 V408 H154 Z" fill="#fff" opacity=".96"/>
+  <path d="M198 250 L278 188 L358 250" fill="none" stroke="#178052" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="220" y="292" width="52" height="116" rx="8" fill="#3B2F8F"/>
+  <rect x="298" y="292" width="60" height="48" rx="8" fill="#3B2F8F" opacity=".85"/>
+  <text x="470" y="270" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800">Jade Remodeling</text>
+  <text x="474" y="337" fill="#C7F05B" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2">JACKSONVILLE &amp; NE FLORIDA</text>
+  <text x="474" y="404" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">Kitchen, bath, repairs and handyman work</text>
+  <text x="474" y="468" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">(904) 762-3792</text>
+</svg>

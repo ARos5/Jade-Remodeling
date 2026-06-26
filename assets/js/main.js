@@ -87,7 +87,7 @@
     set(50);
   });
 
-  /* ---- contact form validation (client-side mock) ---- */
+  /* ---- contact form validation + mailto handoff ---- */
   var form = document.getElementById('quote-form');
   if (form) {
     var success = document.getElementById('form-success');
@@ -113,7 +113,19 @@
         allOk = allOk && ok;
       });
       if (!allOk) { if (firstBad) { var inp = firstBad.querySelector('input,select,textarea'); if (inp) inp.focus(); } return; }
-      form.hidden = true;
+      var recipient = form.getAttribute('data-recipient') || 'cortezjade18@gmail.com';
+      var data = new FormData(form);
+      var subject = 'Jade Remodeling estimate request from ' + (data.get('name') || 'website visitor');
+      var body = [
+        'Name: ' + (data.get('name') || ''),
+        'Phone: ' + (data.get('phone') || ''),
+        'Email: ' + (data.get('email') || ''),
+        'Service: ' + (data.get('service') || ''),
+        '',
+        'Project details:',
+        data.get('message') || ''
+      ].join('\n');
+      window.location.href = 'mailto:' + encodeURIComponent(recipient) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       if (success) { success.classList.add('show'); success.setAttribute('tabindex', '-1'); success.focus(); success.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' }); }
     });
   }
